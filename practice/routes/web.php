@@ -20,3 +20,5 @@ Route::get('/laravel-practice/practice/public', function () {
 Route::get('/index', 'App\Http\Controllers\PracticeController@index',function(){
     return view('index');
 });
+
+Route::get('/top', 'PracticeController@topView')->name('top');
