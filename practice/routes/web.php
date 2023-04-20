@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/laravel-practice/practice/public', function () {
     return view('welcome');
 });
+
+Route::get('/index', 'App\Http\Controllers\PracticeController@index',function(){
+    return view('index');
+});
